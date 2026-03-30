@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
     <style>
         table,th,td {
             border: 1px solid black;
             border-collapse: collapse;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Original+Surfer&display=swap" rel="stylesheet">
 </head>
 <body>
 <header> 
@@ -28,7 +36,7 @@
 <main> 
 <section> 
 <h2 id="s1">Historia</h2> 
-<img src="IMG/Charles.webp" alt="Charles">
+<img src="IMG/Charles.webp" alt="Charles" class="imgpeq">
 <p>Charles Oliveira da Silva, nacido el 17 de octubre de 1989 en Guarujá, São Paulo, Brasil, es un <br> luchador de artes marciales mixtas conocido mundialmente como “Do Bronx”. Desde joven <br> enfrentó problemas de salud que casi le impidieron practicar deportes, pero gracias al apoyo de su <br> familia y su dedicación logró recuperarse y entrenar en jiu-jitsu brasileño, disciplina en la que <br> alcanzó el cinturón negro de cuarto grado.<br>
 <br>Debutó profesionalmente en 2008 y rápidamente llamó la atención por su estilo agresivo y técnico. <br> En 2010 ingresó a la UFC, donde en su primera pelea sometió a Darren Elkins en apenas 41 <br> segundos. A lo largo de su carrera se consolidó como uno de los peleadores más peligrosos de la <br> división ligera, acumulando récords históricos de mayor número de sumisiones y finalizaciones <br> en la UFC. <br>
 <br>El punto culminante de su trayectoria llegó en mayo de 2021, cuando derrotó a Michael Chandler <br> por nocaut técnico en el segundo asalto de UFC 262, conquistando el título mundial de peso ligero. <br> Defendió exitosamente el cinturón frente a Dustin Poirier y Justin Gaethje, demostrando su <br> capacidad para imponerse ante los mejores contendientes. Aunque perdió el campeonato en 2022, <br> Oliveira se mantuvo en la élite de la división y sigue siendo considerado uno de los peleadores más <br> completos y emocionantes de la organización. <br>
@@ -54,7 +62,7 @@
  </ol>
         </section>       
                  
-<section> 
+<section class="ficha"> 
 <h2 id="s3">Ficha técnica</h2> 
     <table style="width: 100%;">
 <caption>Datos de Charles Oliveira</caption>
@@ -91,32 +99,36 @@
     </table>
 </section>     
                  
-<section> 
-<h2 id="s4">Registro de fans</h2> 
-<form>
-    <label for="nombres">Nombres:</label>
-    <input type="text" id="nombres" name="nombres"> <br>
-    
-    <br><label for="Apellidos">Apellidos:</label>
-    <input type="text" id="Apellidos" name="Apellidos"><br>
+<section id="s4" class="registro">
+  <h2>Registro de Fans</h2>
+  <p>Únete a nuestra comunidad de seguidores de Charles Oliveira.</p>
 
-    <br><label for="fecha">Fecha de nacimiento:</label>
-    <input type="date" id="fecha" name="fecha"> <br>
-    
-    <br><label for="correo">Correo Electrónico:</label>
-    <input type="email" id="correo" name="correo"><br>
+  <form>
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" name="nombre">
 
-    <br><input type="submit" value="Registrarse">
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido">
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com">
+
+    <input type="submit" value="Registrarse">
     <input type="reset" value="Borrar">
-</form>
-</section>     
+  </form>
+</section>  
                  
-<section> 
+<section class="galeria"> 
  <h2 id="s5">Galería</h2>
+ <div class="contenedor-galeria">
 <img src="IMG/1.jpg" width="300" height="200" alt="inicio">
 <img src="IMG/2.jpg" width="300" height="200" alt="aura">
 <img src="IMG/3.jpg" width="300" height="200" alt="medio">
 <img src="IMG/4.webp" width="300" height="200" alt="champ">
+</div>
 </section>  
 
 <a href="https://es.wikipedia.org/wiki/Charles_Oliveira?utm_source=copilot.com" target="_blank">Wiki oficial</a>
